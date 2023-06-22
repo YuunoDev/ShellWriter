@@ -1,0 +1,38 @@
+{
+    "tasks": [
+        {
+            "label": "Script SHell (Bash)",
+            "type": "shell",
+            "command": "cd ${fileDirname} && bash ${fileBasename}",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "options": {
+                "statusbar": {
+                    "label": "shell",
+                    "color" : "#ffffff"
+                },
+            }
+                
+        },
+        {
+            "label": "Script SHell (./)",
+            "type": "shell",
+            "command": "cd ${fileDirname} && ./${fileBasename}",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "options": {
+                "statusbar": {
+                    "label": "Shell",
+                    "color" : "#ffffff"
+                },
+            }
+                
+        },
+        
+    ],
+    "version": "2.0.0"
+}
