@@ -10,7 +10,7 @@
             },
             "options": {
                 "statusbar": {
-                    "label": "shell",
+                    "label": "shell b",
                     "color" : "#ffffff"
                 },
             }
@@ -26,13 +26,28 @@
             },
             "options": {
                 "statusbar": {
-                    "label": "Shell",
+                    "label": "Shell .",
                     "color" : "#ffffff"
                 },
             }
                 
         },
-        
+        {
+            "label": "Script SHell (sh)",
+            "type": "shell",
+            "command": "cd ${fileDirname} && sh ${fileBasename}",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "options": {
+                "statusbar": {
+                    "label": "Shell sh",
+                    "color" : "#ffffff"
+                },
+            }
+                
+        },
     ],
     "version": "2.0.0"
 }
